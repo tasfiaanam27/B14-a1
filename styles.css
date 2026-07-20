@@ -62,7 +62,6 @@ nav ul li a {
     background-color: #000000;
     background-image: 
         linear-gradient(to right, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.6) 50%, transparent 100%),
-        linear-gradient(to left, rgba(255, 255, 255, 0.283) 0%, rgba(255, 255, 255, 0.02) 40%, transparent 80%),
         linear-gradient(to bottom, transparent 70%, #000000 100%),
         url('images/banner.jpg'); 
     background-size: cover;
@@ -120,7 +119,7 @@ nav ul li a {
 }
 
 .about-parent{
-    margin: 80px auto;
+    margin: 60px auto 80px;
     text-align:center;
     
 }
@@ -145,7 +144,7 @@ nav ul li a {
     width: 100%;
     display: block;
 }
-.about-parent h1{
+.about-parent h2{
     margin-bottom: 50px;
     margin-top: 0;
     font-size: 56px;
@@ -170,3 +169,154 @@ nav ul li a {
     margin: 8px 0;
     padding: 0 20px;
 }
+
+.secure-your-spot-parent{
+    text-align: center;
+    max-width: 1100px;
+    margin: 90px auto;
+
+}
+.secure-your-spot-parent h2{
+    font-size: 48px;
+    font-weight: bold;
+}
+.secure-your-spot-parent p{
+    color: #575757;
+    font-size: 16px;
+    margin: 10px auto 35px;
+}
+.secure-your-spot-container{
+    display:flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.secure-your-spot-container .pricing-card{
+    border:2px solid #E5E7EB;
+    border-radius: 10px;
+    padding: 32px;
+    text-align: left;
+    width: calc(33.33% - 10px);
+}
+.secure-your-spot-container .pricing-card .level{
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #888888;
+    margin-bottom:8px;
+    margin-top: 0;
+}
+.secure-your-spot-container .pricing-card .price{
+    font-size: 44px;
+    font-weight: bold;
+    margin-bottom:5px;
+    color:#0D1B2A;
+}
+.secure-your-spot-container .pricing-card p{
+    font-size: 13px;
+    color: #888888;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+.secure-your-spot-container .pricing-card ul{
+    font-size: 14px;
+    color: #333333;
+    padding-left: 24px;
+    margin-bottom: 24px;
+    
+}
+.pricing-card li::marker{
+    color:#2563EB;
+}
+ul li{
+    margin-bottom: 10px;
+}
+.secure-your-spot-container .pricing-card hr{
+    color: #E5E7EB;
+    margin: 0 0 15px 0;
+}
+.secure-your-spot-container .standard-button{
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+    color:#2563EB;
+    border-radius: 10px;
+    border: 2px solid #2563EB;
+    margin-bottom: 0;
+    padding: 14px 0;
+    white-space: nowrap;
+    background-color: white;
+    text-align: center;
+}
+.secure-your-spot-container .pricing-card button{
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 10px;
+    margin-bottom: 0;
+    padding: 14px 0;
+    white-space: nowrap;
+    background-color: white;
+    text-align: center;
+}
+.secure-your-spot-container .pricing-card-dark{
+    border:2px solid #E5E7EB;
+    border-radius: 8px;
+    padding: 32px;
+    background-color: #0D1B2A;
+    text-align: left;
+    width: calc(33.33% - 16px);
+
+}
+.secure-your-spot-container .pricing-card-dark .level{
+    color: #93C5FD;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom:8px;
+    margin-top: 0;
+}
+.secure-your-spot-container .pricing-card-dark .price{
+    font-size: 44px;
+    font-weight: bold;
+    margin-bottom:5px;
+    color: #FFFFFF;
+}
+.secure-your-spot-container .pricing-card-dark p{
+    font-size: 13px;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+.secure-your-spot-container .pricing-card-dark ul{
+    font-size: 14px;
+    color: #FFFFFF;
+    padding-left: 24px;
+    margin-bottom: 24px;
+}
+.pricing-card-dark li::marker{
+    color:#2563EB;
+}
+ul li{
+    margin-bottom: 10px;
+}
+
+.secure-your-spot-container .pricing-card-dark button{
+    background-color: #2563EB;
+    font-size: 14px;
+    font-weight: 600;
+    color:#FFFFFF;
+    border-radius: 10px;
+    margin-bottom: 0;
+    padding: 14px 0;
+    white-space: nowrap;
+    text-align: center;
+    width: 100%;
+}
+.secure-your-spot-container .pricing-card-dark hr{
+    color: #FFFFFF;
+    margin: 0 0 15px 0;
+}
+
+
+
+
