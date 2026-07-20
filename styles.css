@@ -15,9 +15,8 @@ nav {
 nav ul {
     display: flex;
     list-style: none;
-    gap: 10px;
+    gap: 20px;
     align-items: center;
-
 }
 
 
@@ -172,8 +171,8 @@ nav ul li a {
 
 .secure-your-spot-parent{
     text-align: center;
-    max-width: 1100px;
-    margin: 90px auto;
+    max-width: 980px;
+    margin: 150px auto 90px;
 
 }
 .secure-your-spot-parent h2{
@@ -222,6 +221,7 @@ nav ul li a {
     color: #333333;
     padding-left: 24px;
     margin-bottom: 24px;
+    text-wrap: nowrap;
     
 }
 .pricing-card li::marker{
@@ -318,6 +318,282 @@ ul li{
     margin: 0 0 15px 0;
 }
 
+/*Terminal Section starts*/
+/* ===========================
+   TERMINAL EXPERIENCE SECTION
+=========================== */
+
+.terminal-parent{
+    padding:80px 0;
+    text-align:center;
+    background:#FFFFFF;
+}
+
+.terminal-parent h2{
+    font-size:48px;
+    font-weight:700;
+    color:#0D1B2A;
+    margin-bottom:16px;
+}
+
+.terminal-subtitle{
+    max-width:720px;
+    margin:0 auto 45px;
+    font-size:18px;
+    line-height:1.7;
+    color:#575757;
+}
+
+/* ===========================
+        TERMINAL
+=========================== */
+
+.terminal-window{
+    max-width:900px;
+    margin:auto;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 18px 45px rgba(15,23,42,.18);
+    transition:.35s ease;
+}
+
+.terminal-window:hover{
+    transform:translateY(-8px);
+    box-shadow:0 25px 60px rgba(37,99,235,.18);
+}
+
+.terminal-header{
+
+    background:#1E293B;
+
+    display:flex;
+    align-items:center;
+
+    padding:18px 24px;
+}
+
+.terminal-buttons{
+
+    display:flex;
+    gap:10px;
+}
+
+.red,
+.yellow,
+.green{
+
+    width:14px;
+    height:14px;
+    border-radius:50%;
+}
+
+.red{
+    background:#FF5F56;
+}
+
+.yellow{
+    background:#FFBD2E;
+}
+
+.green{
+    background:#27C93F;
+}
+
+.terminal-header h3{
+
+    color:white;
+    margin:auto;
+    font-size:18px;
+    font-weight:600;
+}
+
+/* ===========================
+        BODY
+=========================== */
+
+.terminal-body{
+
+    background:#0D1B2A;
+    padding:45px;
+    text-align:left;
+}
+
+.terminal-body p{
+
+    font-family:Consolas, "Courier New", monospace;
+    color:#F8FAFC;
+    font-size:18px;
+    margin-bottom:12px;
+    line-height:1.8;
+}
+
+.blue{
+
+    color:#3B82F6;
+    font-weight:bold;
+}
+
+.success{
+
+    color:#22C55E !important;
+    padding-left:20px;
+}
+
+/* ===========================
+      PROGRESS BAR
+=========================== */
+
+.progress{
+
+    width:100%;
+    height:12px;
+    background:#334155;
+    border-radius:30px;
+    overflow:hidden;
+
+    margin:18px 0;
+}
+
+.progress-fill{
+
+    width:0;
+
+    height:100%;
+
+    background:linear-gradient(
+        90deg,
+        #2563EB,
+        #60A5FA
+    );
+
+    animation:loading 3s ease forwards;
+}
+
+@keyframes loading{
+
+    from{
+
+        width:0%;
+    }
+
+    to{
+
+        width:100%;
+    }
+}
+
+/* ===========================
+      ACCESS BOX
+=========================== */
+
+.access-box{
+
+    border:2px solid #22C55E;
+
+    border-radius:8px;
+
+    padding:22px;
+
+    text-align:center;
+
+    background:rgba(34,197,94,.08);
+
+    animation:glow 2s infinite alternate;
+}
+
+.access-box p{
+
+    color:#22C55E;
+
+    font-size:24px;
+
+    font-weight:bold;
+
+    letter-spacing:3px;
+
+    margin-bottom:10px;
+}
+
+.access-box span{
+
+    color:white;
+
+    font-size:18px;
+
+    font-family:Consolas, monospace;
+}
+
+@keyframes glow{
+
+    from{
+
+        box-shadow:0 0 8px rgba(34,197,94,.25);
+    }
+
+    to{
+
+        box-shadow:0 0 18px rgba(34,197,94,.6);
+    }
+}
+
+/* ===========================
+      BLINKING CURSOR
+=========================== */
+
+.cursor{
+
+    display:inline-block;
+
+    width:10px;
+
+    height:22px;
+
+    background:#22C55E;
+
+    margin-left:5px;
+
+    animation:blink .9s infinite;
+}
+
+@keyframes blink{
+
+    50%{
+
+        opacity:0;
+    }
+}
+
+/* ===========================
+      TYPING TEXT
+=========================== */
+
+.typing{
+
+    color:#FFFFFF;
+
+    margin-top:10px;
+}
+
+/* ===========================
+      SMALL HOVER EFFECTS
+=========================== */
+
+.success:hover{
+
+    color:#86EFAC !important;
+
+    transition:.25s;
+}
+
+.access-box:hover{
+
+    transform:scale(1.02);
+
+    transition:.3s;
+}
+
+/*Terminal Section ends*/
+
 .social-parent{
     background-color: #0D1B2A
 
@@ -326,9 +602,11 @@ ul li{
     display:flex;
     justify-content: space-between;
 }
+
 .copyright{
     color:#FFFFFF;
     font-size: 16px;
+
 }
 .socials{
     display: flex;
@@ -338,9 +616,10 @@ ul li{
 .socials a{
     font-size: 24px;
     text-decoration: none;
+    color: whitesmoke;
 }
 .socials a:hover{
-    color: #FFFFFF;
+    color: blue;
 }
 
 
